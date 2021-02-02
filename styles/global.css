@@ -13,7 +13,17 @@
   --third-color: #003282;
   --fourth-color: #1EBBA1;
   --fifth-color: #FFD900;
-  --main-font-color: #99ADCD;
+
+  --light-border-color: #F8F9FB;
+  --dark-border-color: #F3F5F9;
+
+
+  --main-font-color: #C3CBE2;
+  --bold-font-color: #999999;
+  --sub-title-font-color: #99AAC5;
+  
+  --navbar-height: 70px;
+  --footer-height: 50px;
 }
 
 body {

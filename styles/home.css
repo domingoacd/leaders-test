@@ -1,8 +1,150 @@
 body.home-layout {
   display: grid;
-  grid-template-columns: 200px auto;
-  grid-template-rows: 70px auto 100px;
+  grid-template-columns: 250px auto;
+  grid-template-rows: var(--navbar-height) auto var(--footer-height);
   grid-template-areas: "header header"
                        "sidebar content"
                        "footer footer";
+}
+
+.home-sidebar {
+  grid-area: sidebar;
+  min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+  padding: 2rem 1.5rem;
+  background-color: var(--second-color);
+  border-right: 3px solid var(--light-border-color);
+}
+
+.home-sidebar__user-info {
+  text-align: center;
+}
+
+.home-sidebar__user-info .user-avatar{
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.home-sidebar__user-info .user-name {
+  font-size: 1.2rem;
+  margin: 1.5rem auto 0.3rem;
+  color: var(--third-color);
+}
+
+.home-sidebar__user-info .user-job {
+  font-size: 0.8rem;
+  color: var(--main-font-color);
+}
+
+.home-sidebar__user-info .user-job .user-company {
+  color: var(--fourth-color);
+}
+
+.home-sidebar__user-stats {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.home-sidebar__user-stats .user-stat-container {
+  width: 50%;
+  height: 80px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.home-sidebar__user-stats .user-stat-container:nth-child(1) {
+  border-right: 3px solid #F3F5F9;
+}
+
+.home-sidebar__user-stats .user-stat-container .stat-title {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--third-color);
+}
+
+.home-sidebar__user-stats .user-stat-container .stat-number { 
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--fourth-color);
+}
+
+.home-sidebar__user-recommend {
+  margin-top: 2rem;
+}
+
+.home-sidebar__user-recommend .recommend-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  color: var(--sub-title-font-color);
+}
+
+.home-sidebar__user-recommend .recommend-title .see-more {
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+}
+
+.home-sidebar__user-recommend .recommendation-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.home-sidebar__user-recommend .recommendation-box .recommendation-avatar {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+}
+
+.home-sidebar__user-recommend .recommendation-box .recommendation-details {
+  margin-left: 0.5rem;
+  flex: 1;
+  
+}
+
+.home-sidebar__user-recommend .recommendation-box .recommendation-details .recommendation-details__user-name {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  color: var(--third-color);
+}
+
+.home-sidebar__user-recommend .recommendation-box .recommendation-details .recommendation-details__user-job {
+  font-size: 0.8rem;
+  color: var(--main-font-color);
+}
+
+.home-sidebar__user-recommend .recommendation-box .recommendation-more {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding-bottom: 3px;
+  border-radius: 50%;
+  color: #fff;
+  border: 2px solid var(--main-font-color);
+  color: var(--main-font-color);
+  transition: all 0.2s;
+}
+
+.home-sidebar__user-recommend .recommendation-box .recommendation-more:hover,
+.home-sidebar__user-recommend .recommendation-box .recommendation-more:hover:active {
+  border-color: var(--fourth-color);
+  background-color: var(--fourth-color);
+  color: #fff;
 }
