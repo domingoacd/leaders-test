@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
   font-family: 'Lato',
   sans-serif;
 ;
@@ -17,11 +18,15 @@
   --light-border-color: #F8F9FB;
   --dark-border-color: #F3F5F9;
 
+  --general-shadow: 0px 0px 5px rgb(232 232 232 / 0.3);
 
   --main-font-color: #C3CBE2;
   --bold-font-color: #999999;
   --sub-title-font-color: #99AAC5;
   
+
+  --unactive-color: #EEF1F7;
+
   --navbar-height: 70px;
   --footer-height: 50px;
 }

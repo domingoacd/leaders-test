@@ -1,112 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Inicio</title>
-</head>
-<body class="home-layout" id="leaders-linked">
-  <nav class="nav-menu">
-    <img src="./assets/logo.png" alt="" class="nav-menu__logo">
-    <div class="nav-menu__icons">
-      <a href="" class="icon yellow"><img src="./assets/comentando.png" alt=""></a>
-      <a href="" class="icon"><img src="./assets/user.png" alt=""></a>
-      <a href="" class="icon"><img src="./assets/notification.png" alt=""></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Inicio</title>
+  </head>
+  <body class="home-layout" id="leaders-linked">
+    <nav class="nav-menu">
+      <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+      <div class="nav-menu__icons">
+        <a href="" class="icon yellow"
+          ><img src="./assets/comentando.png" alt=""
+        /></a>
+        <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
+        <a href="" class="icon"
+          ><img src="./assets/notification.png" alt=""
+        /></a>
+      </div>
+      <form action="" class="nav-menu__search">
+        <span class="search-input-container">
+          <button type="submit">
+            <img src="./assets/lupa.png" alt="" />
+          </button>
+          <input type="text" class="search-input" placeholder="Buscar" />
+        </span>
+        <select name="" id="" class="search-select">
+          <option value="">Personas</option>
+          <option value="">Empleos</option>
+          <option value="">Empresa</option>
+        </select>
+      </form>
+      <ul class="nav-menu__links">
+        <li class="current">
+          <a href="">Inicio</a>
+        </li>
+        <li>
+          <a href="">Perfil</a>
+        </li>
+        <li>
+          <a href="">Conexiones</a>
+        </li>
+        <li>
+          <a href="">Empresas</a>
+        </li>
+        <li>
+          <a href="">Trabajos</a>
+        </li>
+        <li>
+          <a href="">Grupos</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="home-sidebar">
+      <div class="home-sidebar__user-info">
+        <img src="./assets/pic.png" alt="" class="user-avatar" />
+        <h3 class="user-name">Alejandro Lozano</h3>
+        <p class="user-job">
+          Ocupación en
+          <span class="user-company">Empresa</span>
+        </p>
+      </div>
+
+      <div class="home-sidebar__user-stats">
+        <div class="user-stat-container">
+          <h5 class="stat-title">Vistas</h5>
+          <p class="stat-number">56</p>
+        </div>
+        <div class="user-stat-container">
+          <h5 class="stat-title">Conexiones</h5>
+          <p class="stat-number">40</p>
+        </div>
+      </div>
+
+      <div class="home-sidebar__user-recommend">
+        <h4 class="recommend-title">
+          Tal vez conoces
+          <a href="" class="see-more">Ver todo</a>
+        </h4>
+
+        <div class="recommendation-box">
+          <img class="recommendation-avatar" src="./assets/recomm-pic.png" />
+          <div class="recommendation-details">
+            <p class="recommendation-details__user-name">Nombre Apellido</p>
+            <p class="recommendation-details__user-job">
+              <span class="recommendation-details__user-job-title"
+                >Director</span
+              >
+              |
+              <span class="recommendation-details__user-job-company"
+                >Empresa</span
+              >
+            </p>
+          </div>
+          <a class="recommendation-more" href=""> + </a>
+        </div>
+        <div class="recommendation-box">
+          <div class="recommendation-avatar"></div>
+          <div class="recommendation-details">
+            <p class="recommendation-details__user-name">Nombre Apellido</p>
+            <p class="recommendation-details__user-job">
+              <span class="recommendation-details__user-job-title"
+                >Director</span
+              >
+              |
+              <span class="recommendation-details__user-job-company"
+                >Empresa</span
+              >
+            </p>
+          </div>
+          <a class="recommendation-more" href=""> + </a>
+        </div>
+      </div>
     </div>
-    <form action="" class="nav-menu__search">
-      <span class="search-input-container">
-        <button type="submit">
-          <img src="./assets/lupa.png" alt="">
+
+    <main class="home-content">
+      <div class="home-publish-options">
+        <button class="home-publish-options__option active">
+          <img src="./assets/paper-plane.png" alt="" class="option-icon" />
+          Compartir una actualizacion
         </button>
-        <input type="text" class="search-input" placeholder="Buscar">
-      </span>
-      <select name="" id="" class="search-select">
-        <option value="">Personas</option>
-        <option value="">Empleos</option>
-        <option value="">Empresa</option>
-      </select>
-    </form>
-    <ul class="nav-menu__links">
-      <li class="current">
-        <a href="">Inicio</a>
-      </li>
-      <li>
-        <a href="">Perfil</a>
-      </li>
-      <li>
-        <a href="">Conexiones</a>
-      </li>
-      <li>
-        <a href="">Empresas</a>
-      </li>
-      <li>
-        <a href="">Trabajos</a>
-      </li>
-      <li>
-        <a href="">Grupos</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="home-sidebar">
-    <div class="home-sidebar__user-info">
-      <img src="./assets/pic.png" alt="" class="user-avatar">
-      <h3 class="user-name">Alejandro Lozano</h3>
-      <p class="user-job">
-        Ocupación en 
-        <span class="user-company">Empresa</span>
-      </p>
-    </div>
-
-    <div class="home-sidebar__user-stats">
-      <div class="user-stat-container">
-        <h5 class="stat-title">Vistas</h5>
-        <p class="stat-number">56</p>
+        <button class="home-publish-options__option">
+          <img
+            src="./assets/camera.png"
+            alt=""
+            class="option-icon option-icon--big"
+          />
+          Subir una foto
+        </button>
+        <button class="home-publish-options__option">
+          <img
+            src="./assets/write.png"
+            alt=""
+            class="option-icon option-icon--big"
+          />
+          Publicar un post
+        </button>
       </div>
-      <div class="user-stat-container">
-        <h5 class="stat-title">Conexiones</h5>
-        <p class="stat-number">40</p>
+
+      <div class="home-publish-post">
+        <form action="">
+          <input
+            type="text"
+            class="home-publish-post__user-text-input"
+            placeholder="¿Qué tienes en mente?"
+          />
+          <div class="home-publish-post__buttons">
+            <button class="home-publish-post__button-option">
+              <img src="./assets/camera.png" alt="" />
+            </button>
+            <button class="home-publish-post__button-option">
+              <img src="./assets/video.png" alt="" />
+            </button>
+            <button class="home-publish-post__button-option">
+              <img src="./assets/chain.png" alt="" class="icon-chain" />
+            </button>
+          </div>
+        </form>
       </div>
-    </div>
 
-    <div class="home-sidebar__user-recommend">
-      <h4 class="recommend-title">
-        Tal vez conoces
-        <a href="" class="see-more">Ver todo</a>
-      </h4>
-
-      <div class="recommendation-box">
-        <img class="recommendation-avatar" src="./assets/recomm-pic.png"/>
-        <div class="recommendation-details">
-          <p class="recommendation-details__user-name">Nombre Apellido</p>
-          <p class="recommendation-details__user-job">
-            <span class="recommendation-details__user-job-title">Director</span>
-            |
-            <span class="recommendation-details__user-job-company">Empresa</span>
-          </p>
+      <section class="home-suggestions">
+        <div class="home-suggestions__options">
+          <p>MOSTRAR SUGERENCIAS</p>
+          <button class="suggestion-option active">
+            <img src="./assets/suitcase.png" alt="" />
+            Trabajos
+          </button>
+          <button class="suggestion-option">
+            <img src="./assets/group.png" alt="" />
+            Grupos
+          </button>
+          <button class="suggestion-option">
+            <img src="./assets/folder.png" alt="" />
+            Empresas
+          </button>
         </div>
-        <a class="recommendation-more" href="">
-          +
-        </a>
-      </div>
-      <div class="recommendation-box">
-        <div class="recommendation-avatar"></div>
-        <div class="recommendation-details">
-          <p class="recommendation-details__user-name">Nombre Apellido</p>
-          <p class="recommendation-details__user-job">
-            <span class="recommendation-details__user-job-title">Director</span>
-            |
-            <span class="recommendation-details__user-job-company">Empresa</span>
+        <div class="home-suggestions__results">
+          <p class="suggestions-restuls__title">
+            Trabajos que te pordrian interesar
+            <a href="">VER TODO</a>
           </p>
-        </div>
-        <a class="recommendation-more" href="">
-          +
-        </a>
-      </div>
-    </div>
 
-  </div>
-</body>
+          <div class="suggestions-results__container">
+            <div class="suggestions-box outstanding">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <div class="outstanding-mark"></div>
+                  <h3 class="suggestion_title">Nombre del Cargo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <h3 class="suggestion_title">Nombre del Cargo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box outstanding">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <div class="outstanding-mark"></div>
+                  <h3 class="suggestion_title">Nombre del Cargo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <h3 class="suggestion_title">Nombre del Cargo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </body>
 </html>
