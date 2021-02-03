@@ -154,6 +154,9 @@
 @media screen and (max-width: 650px) {
   .nav-menu {
     position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
   }
   .nav-menu .nav-menu__desktop-menu {
     display: none;

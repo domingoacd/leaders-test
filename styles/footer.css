@@ -80,3 +80,31 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 650px) {
+  .footer {
+    padding: 1rem;
+  }
+
+  .footer .footer__wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer .copyright {
+    margin-top: 1rem;
+  }
+
+  .footer .footer__links {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .footer .footer__links li {
+    margin: 0;
+  }
+
+  .footer .footer__links .footer-email-subscribe {
+    height: 2rem;
+  }
+}
