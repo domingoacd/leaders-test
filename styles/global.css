@@ -3,29 +3,29 @@
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Lato',
-  sans-serif;
-;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.2;
 }
 
 :root {
-  --first-color: #F9FAFC;
-  --second-color: #FFFFFF;
+  --first-color: #f9fafc;
+  --second-color: #ffffff;
   --third-color: #003282;
-  --fourth-color: #1EBBA1;
-  --fifth-color: #FFD900;
+  --fourth-color: #1ebba1;
+  --fifth-color: #ffd900;
 
-  --light-border-color: #F8F9FB;
-  --dark-border-color: #F3F6F9;
+  --light-blue-color: #096bcb;
 
-  --general-shadow: 0px 0px 5px rgb(232 232 232 / 0.3);
+  --light-border-color: #f8f9fb;
+  --dark-border-color: #f3f6f9;
 
-  --main-font-color: #C3CBE2;
+  --general-shadow: 0px 0px 5px rgb(232 232 232 / 0.5);
+
+  --main-font-color: #c3cbe2;
   --bold-font-color: #999999;
-  --sub-title-font-color: #99AAC5;
-  
+  --sub-title-font-color: #99aac5;
 
-  --unactive-color: #EEF1F7;
+  --unactive-color: #eef1f7;
 
   --navbar-height: 70px;
   --footer-height: 50px;

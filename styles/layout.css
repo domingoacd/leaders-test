@@ -2,17 +2,18 @@ body.groups-layout {
   display: grid;
   grid-template-columns: 250px auto 250px;
   grid-template-rows: var(--navbar-height) auto var(--footer-height);
-  grid-template-areas: 
-  "header header header"
-  "sidebar-left content sidebar-right"
-  "footer footer footer";
+  grid-template-areas:
+    'header header header'
+    'sidebar-left content sidebar-right'
+    'footer footer footer';
 }
 
 body.home-layout {
   display: grid;
   grid-template-columns: 250px auto;
   grid-template-rows: var(--navbar-height) auto var(--footer-height);
-  grid-template-areas: "header header"
-                       "sidebar content"
-                       "footer footer";
+  grid-template-areas:
+    'header header'
+    'sidebar content'
+    'footer footer';
 }

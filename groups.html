@@ -1,86 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Grupos</title>
-</head>
-<body class="groups-layout">
-  <nav class="nav-menu">
-    <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
-    <div class="nav-menu__icons">
-      <a href="" class="icon yellow"
-        ><img src="./assets/comentando.png" alt=""
-      /></a>
-      <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
-      <a href="" class="icon"
-        ><img src="./assets/notification.png" alt=""
-      /></a>
-    </div>
-    <form action="" class="nav-menu__search">
-      <span class="search-input-container">
-        <button type="submit">
-          <img src="./assets/lupa.png" alt="" />
-        </button>
-        <input type="text" class="search-input" placeholder="Buscar" />
-      </span>
-      <select name="" id="" class="search-select">
-        <option value="">Personas</option>
-        <option value="">Empleos</option>
-        <option value="">Empresa</option>
-      </select>
-    </form>
-    <ul class="nav-menu__links">
-      <li class="current">
-        <a href="./index.html">Inicio</a>
-      </li>
-      <li>
-        <a href="">Perfil</a>
-      </li>
-      <li>
-        <a href="">Conexiones</a>
-      </li>
-      <li>
-        <a href="">Empresas</a>
-      </li>
-      <li>
-        <a href="">Trabajos</a>
-      </li>
-      <li>
-        <a href="./groups.html">Grupos</a>
-      </li>
-    </ul>
-  </nav>
-  <main class="groups-content">
-
-  </main>
-  <footer class="footer">
-    <div class="footer__wrapper">
-      <p class="copyright">© Derechos de autor Leaders Linked todos los derechos reservados - CESA Management Solutions</p>
-      <ul class="footer__links">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Grupos</title>
+  </head>
+  <body class="groups-layout">
+    <nav class="nav-menu">
+      <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+      <div class="nav-menu__icons">
+        <a href="" class="icon yellow"
+          ><img src="./assets/comentando.png" alt=""
+        /></a>
+        <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
+        <a href="" class="icon"
+          ><img src="./assets/notification.png" alt=""
+        /></a>
+      </div>
+      <form action="" class="nav-menu__search">
+        <span class="search-input-container">
+          <button type="submit">
+            <img src="./assets/lupa.png" alt="" />
+          </button>
+          <input type="text" class="search-input" placeholder="Buscar" />
+        </span>
+        <select name="" id="" class="search-select">
+          <option value="">Personas</option>
+          <option value="">Empleos</option>
+          <option value="">Empresa</option>
+        </select>
+      </form>
+      <ul class="nav-menu__links">
         <li>
-          <a href="">Centro de ayuda</a>
+          <a href="./index.html">Inicio</a>
         </li>
         <li>
-          <a href="">Contacto</a>
-        </li>
-        <li>Idioma
-          <select name="" id="" class="footer-languaje-select">
-            <option value="">Español</option>
-            <option value="">Inglés</option>
-          </select>
+          <a href="">Perfil</a>
         </li>
         <li>
-          <form action="" class="footer-email-subscribe">
-            <input type="text" placeholder="Ingresar correo electronico">
-            <button type="submit">
-              <img src="./assets/mail.png" alt="">
-            </button>
-          </form>
+          <a href="">Conexiones</a>
+        </li>
+        <li>
+          <a href="">Empresas</a>
+        </li>
+        <li>
+          <a href="">Trabajos</a>
+        </li>
+        <li class="current">
+          <a href="./groups.html">Grupos</a>
         </li>
       </ul>
-    </div>
-  </footer>
-</body>
+    </nav>
+    <aside class="groups-sidebar">
+      <div class="groups-sidebar__box groups-sidebar__box--xs"></div>
+      <div class="groups-sidebar__box groups-sidebar__box--m"></div>
+      <div class="groups-sidebar__box groups-sidebar__box--l"></div>
+      <div class="groups-sidebar__box groups-sidebar__box--s"></div>
+    </aside>
+    <main class="groups-content">
+      <header class="groups-content__head">
+        <div class="groups-content__head__title-container">
+          <img
+            class="groups-content__head__icon"
+            src="./assets/group-yellow.png"
+          />
+          <h2 class="groups-content__head__title">Grupos</h2>
+        </div>
+
+        <button
+          class="groups-content__head__create-group group-btn group-btn--blue"
+        >
+          Crear página de grupo
+        </button>
+      </header>
+
+      <p class="groups-content__description">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+        nonummy nibh euismod tincidunt ut lao- reet dolore magna aliquam erat
+        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullam- corper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        Duis autem vel eum iriure dolor in hen-
+      </p>
+      <section class="groups-content__groups-container">
+        <div class="groups-content__groups-container__header">
+          <div class="groups-content__groups-container__header__left-side">
+            <div class="left-side__icon">
+              <img src="./assets/group-yellow.png" alt="" />
+            </div>
+            <div class="left-side__titles">
+              <h3 class="groups-container-title">Mis grupos</h3>
+              <p class="groups-container-subtitle">
+                Grupos que te pordrian interesar
+              </p>
+            </div>
+          </div>
+          <div class="groups-content__groups-container__header__right-side">
+            <button class="right-side__button group-btn group-btn--blue">
+              Mis Grupos</button
+            ><button class="right-side__button group-btn group-btn--aqua">
+              Grupos unidos
+            </button>
+          </div>
+        </div>
+        <div class="groups-content__cards-container">
+          <div class="group-card">
+            <div class="group-card__pic">
+              <img src="./assets/group.png" alt="" />
+            </div>
+
+            <div class="group-card__information">
+              <h4 class="group-card__information__group-name">
+                Nombre del grupo ejemplo
+              </h4>
+              <p class="groud-card__information__group-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation
+              </p>
+            </div>
+
+            <div class="group-card__members">
+              <h4 class="group-card__members__title">Miembros</h4>
+              <p class="group-card__members__amount">
+                34 <span>miembros</span>
+              </p>
+            </div>
+
+            <div class="group-card__buttons">
+              <button class="group-btn group-btn--blue">Ver grupo</button>
+              <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+              <button class="group-btn">Dejar Grupo</button>
+            </div>
+          </div>
+          <div class="group-card">
+            <div class="group-card__pic">
+              <img src="./assets/group.png" alt="" />
+            </div>
+
+            <div class="group-card__information">
+              <h4 class="group-card__information__group-name">
+                Nombre del grupo ejemplo
+              </h4>
+              <p class="groud-card__information__group-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation
+              </p>
+            </div>
+
+            <div class="group-card__members">
+              <h4 class="group-card__members__title">Miembros</h4>
+              <p class="group-card__members__amount">
+                34 <span>miembros</span>
+              </p>
+            </div>
+
+            <div class="group-card__buttons">
+              <button class="group-btn group-btn--blue">Ver grupo</button>
+              <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+              <button class="group-btn">Dejar Grupo</button>
+            </div>
+          </div>
+          <div class="group-card">
+            <div class="group-card__pic">
+              <img src="./assets/group.png" alt="" />
+            </div>
+
+            <div class="group-card__information">
+              <h4 class="group-card__information__group-name">
+                Nombre del grupo ejemplo
+              </h4>
+              <p class="groud-card__information__group-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation
+              </p>
+            </div>
+
+            <div class="group-card__members">
+              <h4 class="group-card__members__title">Miembros</h4>
+              <p class="group-card__members__amount">
+                34 <span>miembros</span>
+              </p>
+            </div>
+
+            <div class="group-card__buttons">
+              <button class="group-btn group-btn--blue">Ver grupo</button>
+              <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+              <button class="group-btn">Dejar Grupo</button>
+            </div>
+          </div>
+
+          <div class="groups-content__cards-container__pagination">
+            <button class="group-pagination-btn active"></button>
+            <button class="group-pagination-btn"></button>
+            <button class="group-pagination-btn"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <aside class="groups-sidebar groups-sidebar--right">
+      <div class="groups-sidebar__box groups-sidebar__box--s"></div>
+      <div class="groups-sidebar__box groups-sidebar__box--l"></div>
+      <div class="groups-sidebar__box groups-sidebar__box--m"></div>
+      <div class="groups-sidebar__box groups-sidebar__box--xs"></div>
+    </aside>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <p class="copyright">
+          © Derechos de autor Leaders Linked todos los derechos reservados -
+          CESA Management Solutions
+        </p>
+        <ul class="footer__links">
+          <li>
+            <a href="">Centro de ayuda</a>
+          </li>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+          <li>
+            Idioma
+            <select name="" id="" class="footer-languaje-select">
+              <option value="">Español</option>
+              <option value="">Inglés</option>
+            </select>
+          </li>
+          <li>
+            <form action="" class="footer-email-subscribe">
+              <input type="text" placeholder="Ingresar correo electronico" />
+              <button type="submit">
+                <img src="./assets/mail.png" alt="" />
+              </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
