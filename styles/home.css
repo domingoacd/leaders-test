@@ -604,11 +604,14 @@
     left: 0;
     bottom: 0;
     z-index: 1000;
+    width: 90%;
+    max-width: 25rem;
     transition: transform 0.5s;
     transform: translateX(-100%);
   }
 
   .home-sidebar.show {
+    overflow: auto;
     transform: translateX(0);
   }
 

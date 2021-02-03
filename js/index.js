@@ -6,6 +6,8 @@ const showSideBar = (e) => {
 
   sideBar.classList.add('show')
   overlay.classList.add('show')
+
+  document.body.classList.add('showing-overlay');
 }
 
 const attachSideProfileEvent = () => {

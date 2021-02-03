@@ -37,6 +37,10 @@ body {
   background-color: var(--first-color);
 }
 
+body.showing-overlay {
+  overflow: hidden;
+}
+
 .overlay {
   position: fixed;
   top: 0;
