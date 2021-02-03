@@ -12,7 +12,7 @@
     right: 1rem;
     width: 1.5rem;
     height: 1.5rem;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -634,6 +634,10 @@
   .home-sidebar.show {
     overflow: auto;
     transform: translateX(0);
+  }
+
+  .home-sidebar .home-sidebar__close-btn {
+    display: flex;
   }
 
   .home-content {
