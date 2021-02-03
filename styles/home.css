@@ -603,8 +603,13 @@
     top: 0;
     left: 0;
     bottom: 0;
-    z-index: 100;
+    z-index: 1000;
+    transition: transform 0.5s;
     transform: translateX(-100%);
+  }
+
+  .home-sidebar.show {
+    transform: translateX(0);
   }
 
   .home-content {

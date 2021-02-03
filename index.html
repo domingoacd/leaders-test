@@ -12,6 +12,9 @@
     <title>Inicio</title>
   </head>
   <body class="home-layout" id="leaders-linked">
+    <div class="overlay j-overlay">
+
+    </div>
     <nav class="nav-menu">
       <div class="nav-menu__wrapper nav-menu__desktop-menu">
         <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
@@ -59,7 +62,7 @@
         </ul>
       </div>
       <div class="nav-menu__mobile-menu">
-        <button class="nav-menu__mobile-menu__profile-btn">
+        <button class="nav-menu__mobile-menu__profile-btn j-open-side-profile">
           <img src="./assets/pic.png" alt="">
         </button>
         <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
@@ -68,7 +71,7 @@
         </button>
       </div>
     </nav>
-    <div class="home-sidebar">
+    <div class="home-sidebar" id="sidebar">
       <div class="home-sidebar__user-info">
         <img src="./assets/pic.png" alt="" class="user-avatar" />
         <h3 class="user-name">Alejandro Lozano</h3>
@@ -435,5 +438,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
