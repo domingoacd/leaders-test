@@ -11,10 +11,14 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  transition: transform 0.2s;
+  transform: translateX(100%);
   background-color: var(--light-blue-color);
-  box-shadow: -10px 0px 10px rgb(97 97 97 / 20%);
 }
 
+.sidemenu.show {
+  transform: translateX(0);
+}
 .sidemenu .sidemenu__top {
   position: absolute;
   top: 2rem;
