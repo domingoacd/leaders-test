@@ -6,6 +6,27 @@
   border-right: 3px solid var(--light-border-color);
 }
 
+  .home-sidebar .home-sidebar__close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--fourth-color);
+  }
+
+  .home-sidebar .home-sidebar__close-btn img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+  }
+
 .home-sidebar__user-info {
   text-align: center;
 }
