@@ -13,49 +13,60 @@
   </head>
   <body class="home-layout" id="leaders-linked">
     <nav class="nav-menu">
-      <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
-      <div class="nav-menu__icons">
-        <a href="" class="icon yellow"
-          ><img src="./assets/comentando.png" alt=""
-        /></a>
-        <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
-        <a href="" class="icon"
-          ><img src="./assets/notification.png" alt=""
-        /></a>
+      <div class="nav-menu__wrapper nav-menu__desktop-menu">
+        <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+        <div class="nav-menu__icons">
+          <a href="" class="icon yellow"
+            ><img src="./assets/comentando.png" alt=""
+          /></a>
+          <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
+          <a href="" class="icon"
+            ><img src="./assets/notification.png" alt=""
+          /></a>
+        </div>
+        <form action="" class="nav-menu__search">
+          <span class="search-input-container">
+            <button type="submit">
+              <img src="./assets/lupa.png" alt="" />
+            </button>
+            <input type="text" class="search-input" placeholder="Buscar" />
+          </span>
+          <select name="" id="" class="search-select">
+            <option value="">Personas</option>
+            <option value="">Empleos</option>
+            <option value="">Empresa</option>
+          </select>
+        </form>
+        <ul class="nav-menu__links">
+          <li class="current">
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="">Perfil</a>
+          </li>
+          <li>
+            <a href="">Conexiones</a>
+          </li>
+          <li>
+            <a href="">Empresas</a>
+          </li>
+          <li>
+            <a href="">Trabajos</a>
+          </li>
+          <li>
+            <a href="./groups.html">Grupos</a>
+          </li>
+        </ul>
       </div>
-      <form action="" class="nav-menu__search">
-        <span class="search-input-container">
-          <button type="submit">
-            <img src="./assets/lupa.png" alt="" />
-          </button>
-          <input type="text" class="search-input" placeholder="Buscar" />
-        </span>
-        <select name="" id="" class="search-select">
-          <option value="">Personas</option>
-          <option value="">Empleos</option>
-          <option value="">Empresa</option>
-        </select>
-      </form>
-      <ul class="nav-menu__links">
-        <li class="current">
-          <a href="./index.html">Inicio</a>
-        </li>
-        <li>
-          <a href="">Perfil</a>
-        </li>
-        <li>
-          <a href="">Conexiones</a>
-        </li>
-        <li>
-          <a href="">Empresas</a>
-        </li>
-        <li>
-          <a href="">Trabajos</a>
-        </li>
-        <li>
-          <a href="./groups.html">Grupos</a>
-        </li>
-      </ul>
+      <div class="nav-menu__mobile-menu">
+        <button class="nav-menu__mobile-menu__profile-btn">
+          <img src="./assets/pic.png" alt="">
+        </button>
+        <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+        <button class="nav-menu__mobile-menu__open-btn">
+          <img src="./assets/menu.png" alt="">
+        </button>
+      </div>
     </nav>
     <div class="home-sidebar">
       <div class="home-sidebar__user-info">
@@ -167,18 +178,20 @@
       <section class="home-suggestions">
         <div class="home-suggestions__options">
           <p>MOSTRAR SUGERENCIAS</p>
-          <button class="suggestion-option active">
-            <img src="./assets/suitcase.png" alt="" />
-            Trabajos
-          </button>
-          <button class="suggestion-option">
-            <img src="./assets/group.png" alt="" />
-            Grupos
-          </button>
-          <button class="suggestion-option">
-            <img src="./assets/folder.png" alt="" />
-            Empresas
-          </button>
+          <div class="suggestion-options-container">
+            <button class="suggestion-option active">
+              <img src="./assets/suitcase.png" alt="" />
+              Trabajos
+            </button>
+            <button class="suggestion-option">
+              <img src="./assets/group.png" alt="" />
+              Grupos
+            </button>
+            <button class="suggestion-option">
+              <img src="./assets/folder.png" alt="" />
+              Empresas
+            </button>
+          </div>
         </div>
         <div class="home-suggestions__results">
           <p class="suggestions-restuls__title">
@@ -246,7 +259,7 @@
           <div class="post-box">
             <div class="post-box__user-info">
               <div class="post-box__user-info__avatar">
-                <img src="./assets/profile-pic.png" alt="">
+                <img src="./assets/profile-pic.png" alt="" />
               </div>
               <div class="post-box__user-info__details">
                 <p class="user-name">Ricardo Carmona</p>
@@ -257,7 +270,7 @@
             </div>
             <div class="post-box__content">
               <div class="post-box__content__image">
-                <img src="./assets/post-pic.png" alt="">
+                <img src="./assets/post-pic.png" alt="" />
               </div>
               <p class="post-box__content__excerpt">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -281,15 +294,15 @@
                   </div>
                 </div>
               </div>
-               <div class="post-box__content__input-comment">
-                  <input type="text" placeholder="Escribe un comentario..."/>
-               </div> 
+              <div class="post-box__content__input-comment">
+                <input type="text" placeholder="Escribe un comentario..." />
+              </div>
             </div>
           </div>
           <div class="post-box">
             <div class="post-box__user-info">
               <div class="post-box__user-info__avatar">
-                <img src="./assets/profile-pic.png" alt="">
+                <img src="./assets/profile-pic.png" alt="" />
               </div>
               <div class="post-box__user-info__details">
                 <p class="user-name">Ricardo Carmona</p>
@@ -321,9 +334,9 @@
                   </div>
                 </div>
               </div>
-               <div class="post-box__content__input-comment">
-                  <input type="text" placeholder="Escribe un comentario..."/>
-               </div> 
+              <div class="post-box__content__input-comment">
+                <input type="text" placeholder="Escribe un comentario..." />
+              </div>
             </div>
           </div>
         </div>
@@ -335,14 +348,20 @@
               <div class="post-recent-connect__pic second-pic"></div>
             </div>
             <div class="post-recent-connect__connect-info">
-              <p class="post-recent-connect__connect-info__text"><span>Juliana Torres</span> esta conectada con <span>Ricardo Carmona</span></p>
-              <input class="post-recent-connect__connect-info__input" placeholder="Buscar conexiones..."/>
+              <p class="post-recent-connect__connect-info__text">
+                <span>Juliana Torres</span> esta conectada con
+                <span>Ricardo Carmona</span>
+              </p>
+              <input
+                class="post-recent-connect__connect-info__input"
+                placeholder="Buscar conexiones..."
+              />
             </div>
           </div>
           <div class="post-box">
             <div class="post-box__user-info">
               <div class="post-box__user-info__avatar">
-                <img src="./assets/profile-pic2.png" alt="">
+                <img src="./assets/profile-pic2.png" alt="" />
               </div>
               <div class="post-box__user-info__details">
                 <p class="user-name">Juliana Torres</p>
@@ -353,7 +372,7 @@
             </div>
             <div class="post-box__content">
               <div class="post-box__content__image">
-                <img src="./assets/post-pic2.png" alt="">
+                <img src="./assets/post-pic2.png" alt="" />
               </div>
               <p class="post-box__content__excerpt">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
@@ -377,9 +396,9 @@
                   </div>
                 </div>
               </div>
-               <div class="post-box__content__input-comment">
-                  <input type="text" placeholder="Escribe un comentario..."/>
-               </div> 
+              <div class="post-box__content__input-comment">
+                <input type="text" placeholder="Escribe un comentario..." />
+              </div>
             </div>
           </div>
         </div>
@@ -387,7 +406,10 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <p class="copyright">© Derechos de autor Leaders Linked todos los derechos reservados - CESA Management Solutions</p>
+        <p class="copyright">
+          © Derechos de autor Leaders Linked todos los derechos reservados -
+          CESA Management Solutions
+        </p>
         <ul class="footer__links">
           <li>
             <a href="">Centro de ayuda</a>
@@ -395,7 +417,8 @@
           <li>
             <a href="">Contacto</a>
           </li>
-          <li>Idioma
+          <li>
+            Idioma
             <select name="" id="" class="footer-languaje-select">
               <option value="">Español</option>
               <option value="">Inglés</option>
@@ -403,9 +426,9 @@
           </li>
           <li>
             <form action="" class="footer-email-subscribe">
-              <input type="text" placeholder="Ingresar correo electronico">
+              <input type="text" placeholder="Ingresar correo electronico" />
               <button type="submit">
-                <img src="./assets/mail.png" alt="">
+                <img src="./assets/mail.png" alt="" />
               </button>
             </form>
           </li>

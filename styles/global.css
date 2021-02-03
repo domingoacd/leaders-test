@@ -27,10 +27,13 @@
 
   --unactive-color: #eef1f7;
 
-  --navbar-height: 70px;
-  --footer-height: 50px;
+  --navbar-height: 5rem;
+  --footer-height: 3rem;
+
+  --max-width-expand: 2200px
 }
 
 body {
   background-color: var(--first-color);
 }
+

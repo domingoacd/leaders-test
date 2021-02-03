@@ -1,3 +1,13 @@
+body.home-layout {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: var(--navbar-height) auto auto;
+  grid-template-areas:
+    'header header'
+    'sidebar content'
+    'footer footer';
+}
+
 body.groups-layout {
   display: grid;
   grid-template-columns: 250px auto 250px;
@@ -8,12 +18,10 @@ body.groups-layout {
     'footer footer footer';
 }
 
-body.home-layout {
-  display: grid;
-  grid-template-columns: 250px auto;
-  grid-template-rows: var(--navbar-height) auto var(--footer-height);
-  grid-template-areas:
-    'header header'
-    'sidebar content'
-    'footer footer';
+
+@media screen and (max-width: 650px) {
+  body.home-layout {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "content" "footer";
+  }
 }

@@ -148,10 +148,12 @@
 .home-content .home-publish-options {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .home-content .home-publish-options .home-publish-options__option {
   width: 30%;
+  min-width: 15rem;
   height: 2.5rem;
   display: flex;
   justify-content: center;
@@ -159,6 +161,7 @@
   border-radius: 3px;
   border: none;
   font-size: 0.9rem;
+  margin: 0.5rem 1rem;
   cursor: pointer;
   color: var(--main-font-color);
   box-shadow: var(--general-shadow);
@@ -272,20 +275,29 @@
 .home-suggestions .home-suggestions__options p {
   flex: 0.8;
 }
+.home-suggestions .home-suggestions__options .suggestion-options-container {
+  display: flex;
+  flex-wrap: wrap; 
+}
 
 .home-suggestions .home-suggestions__options .suggestion-option{ 
-  width: 25%;
+  width: 10rem;
   height: 2rem;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   padding: 0 1rem;
+  margin: 0 0.5rem;
   font-size: 0.6rem;
   border-radius: 3px;
   cursor: pointer;
   border: none;
   color: var(--second-color);
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.home-suggestions .home-suggestions__options .suggestion-option:nth-last-child(1) {
+  margin-right: 0;
 }
 
 .home-suggestions .home-suggestions__options .suggestion-option.active {
@@ -304,6 +316,7 @@
 .home-suggestions .home-suggestions__results .suggestions-restuls__title {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   font-size: 1rem;
   margin: 1rem 0;
   color: var(--sub-title-font-color);
@@ -313,7 +326,6 @@
   text-decoration: none;
   font-size: 0.6rem;
   font-weight: bold;
-  margin-bottom: 1rem;
   color: var(--fourth-color);
 }
 
@@ -327,6 +339,7 @@
 .home-suggestions .home-suggestions__results .suggestions-results__container .suggestions-box {
   position: relative;
   width: 22%;
+  min-width: 14rem;
   margin: 0.3rem;
   border-radius: 3px;
   overflow: hidden;
@@ -582,4 +595,58 @@
 
 .post-recent-connect .post-recent-connect__connect-info .post-recent-connect__connect-info__input::placeholder {
   color: var(--main-font-color);
+}
+
+@media screen and (max-width: 650px) {
+  .home-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    transform: translateX(-100%);
+  }
+
+  .home-content {
+    padding: 2rem 0.5rem;
+  }
+
+  .home-content .home-publish-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-suggestions .home-suggestions__options {
+    flex-direction: column;
+  }
+
+  .home-suggestions .home-suggestions__options p {
+    margin-bottom: 1rem;
+  }
+
+  .home-suggestions .home-suggestions__options .suggestion-options-container {
+    justify-content: center;
+  }
+
+  .home-suggestions .home-suggestions__options .suggestion-option {
+    margin: 0.2rem 0;
+  }
+
+  .home-suggestions .home-suggestions__results .suggestions-results__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-suggestions .home-suggestions__results .suggestions-results__container .suggestions-box {
+    width: 70%;
+  }
+
+  .home-posts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-posts .home-posts__column {
+    width: 90%;
+  }
 }
