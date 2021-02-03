@@ -1,4 +1,6 @@
 @import "./global.css";
+@import './layout.css';
 @import "./navbar.css";
 @import "./footer.css";
 @import "./home.css";
+@import "./groups.css";
