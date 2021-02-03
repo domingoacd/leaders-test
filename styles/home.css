@@ -649,6 +649,10 @@
     align-items: center;
   }
 
+  .home-content .home-publish-post form .home-publish-post__buttons {
+    display: none;
+  }
+
   .home-suggestions .home-suggestions__options {
     flex-direction: column;
   }
@@ -683,7 +687,7 @@
     width: 90%;
   }
 
-  .home-content .home-publish-post form .home-publish-post__buttons {
-    display: none;
+  .home-posts .home-posts__column .post-box .post-box__content .post-box__content__image {
+    height: 10rem;
   }
 }

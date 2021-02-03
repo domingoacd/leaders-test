@@ -215,6 +215,7 @@
   }
 
   .nav-menu .nav-menu__mobile-menu .nav-menu__search {
+    max-width: 30rem;
     flex: 1;
     margin: 0 1rem;
   }
