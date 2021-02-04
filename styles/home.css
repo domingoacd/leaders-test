@@ -269,14 +269,19 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+
+
 .home-content .home-publish-post form .home-publish-post__user-text-input {
-  height: 100%;
-  flex: 1;
+  width: 80%;
+  height: 2rem;
+  /* flex: 1; */
   border: none;
   font-size: 1rem;
   color: var(--bold-font-color);
+  transition: height 0.2s, width 0.2s;
 }
 
 .home-content
@@ -295,6 +300,8 @@
   form
   .home-publish-post__user-text-input:focus {
   outline: none;
+  height: 5rem;
+  width: 100%;
 }
 
 .home-content

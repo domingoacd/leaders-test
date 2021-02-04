@@ -1,5 +1,6 @@
 import activateSuggestionsButtons from './homeSuggestions.js';
 import activatePublishFunctionality from './homePublishPosts.js';
+import activateGroupsCarousel from "./groupsCarousel.js";
 
 const showSideBar = (e) => {
   const sideBar = document.getElementById('sidebar');
@@ -62,5 +63,6 @@ const startTestFunctionalities = () => {
   attachSideMenuEvents();
   activateSuggestionsButtons();
   activatePublishFunctionality();
+  activateGroupsCarousel()
 };
 window.addEventListener('load', startTestFunctionalities);
