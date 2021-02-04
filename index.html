@@ -18,7 +18,9 @@
         <button class="nav-menu__mobile-menu__profile-btn j-open-side-profile">
           <img src="./assets/pic.png" alt="" />
         </button>
-        <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+        <a href="./index.html">
+          <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+        </a>
         <div class="nav-menu__icons">
           <a href="" class="icon yellow"
             ><img src="./assets/comentando.png" alt=""
@@ -315,21 +317,33 @@
         <div class="home-suggestions__options">
           <p>MOSTRAR SUGERENCIAS</p>
           <div class="suggestion-options-container">
-            <button class="suggestion-option active">
+            <button
+              class="suggestion-option active j-suggestion-btn"
+              data-button="suggestion-jobs"
+            >
               <img src="./assets/suitcase.png" alt="" />
               Trabajos
             </button>
-            <button class="suggestion-option">
+            <button
+              class="suggestion-option j-suggestion-btn"
+              data-button="suggestion-groups"
+            >
               <img src="./assets/group.png" alt="" />
               Grupos
             </button>
-            <button class="suggestion-option">
+            <button
+              class="suggestion-option j-suggestion-btn"
+              data-button="suggestion-companies"
+            >
               <img src="./assets/folder.png" alt="" />
               Empresas
             </button>
           </div>
         </div>
-        <div class="home-suggestions__results">
+        <div
+          class="home-suggestions__results show j-suggestion-result"
+          data-suggestions="suggestion-jobs"
+        >
           <p class="suggestions-restuls__title">
             Trabajos que te pordrian interesar
             <a href="">VER TODO</a>
@@ -379,6 +393,130 @@
                 <div class="suggestion-box__top">
                   <h3 class="suggestion_title">Nombre del Cargo</h3>
                   <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="home-suggestions__results j-suggestion-result"
+          data-suggestions="suggestion-groups"
+        >
+          <p class="suggestions-restuls__title">
+            Grupos que te pordrian interesar
+            <a href="">VER TODO</a>
+          </p>
+
+          <div class="suggestions-results__container">
+            <div class="suggestions-box outstanding">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <div class="outstanding-mark"></div>
+                  <h3 class="suggestion_title">Nombre del Grupo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <h3 class="suggestion_title">Nombre del Grupo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box outstanding">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <div class="outstanding-mark"></div>
+                  <h3 class="suggestion_title">Nombre del Grupo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <h3 class="suggestion_title">Nombre del Grupo</h3>
+                  <p class="suggestion_description">Nombre de la Empresa</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="home-suggestions__results j-suggestion-result"
+          data-suggestions="suggestion-companies"
+        >
+          <p class="suggestions-restuls__title">
+            Empresas que te pordrian interesar
+            <a href="">VER TODO</a>
+          </p>
+
+          <div class="suggestions-results__container">
+            <div class="suggestions-box outstanding">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <div class="outstanding-mark"></div>
+                  <h3 class="suggestion_title">Nombre de la Empresa</h3>
+                  <p class="suggestion_description">Subtitulo de ejemplo</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <h3 class="suggestion_title">Nombre de la Empresa</h3>
+                  <p class="suggestion_description">Subtitulo de ejemplo</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box outstanding">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <div class="outstanding-mark"></div>
+                  <h3 class="suggestion_title">Nombre de la Empresa</h3>
+                  <p class="suggestion_description">Subtitulo de ejemplo</p>
+                </div>
+                <div class="suggestion-box__bottom">
+                  <p class="suggestion-details">20 vistas</p>
+                  <p class="suggestion-details">12 respuestas</p>
+                </div>
+              </a>
+            </div>
+            <div class="suggestions-box">
+              <a href="">
+                <div class="suggestion-box__top">
+                  <h3 class="suggestion_title">Nombre de la Empresa</h3>
+                  <p class="suggestion_description">Subtitulo de ejemplo</p>
                 </div>
                 <div class="suggestion-box__bottom">
                   <p class="suggestion-details">20 vistas</p>
@@ -572,6 +710,6 @@
       </div>
     </footer>
 
-    <script src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

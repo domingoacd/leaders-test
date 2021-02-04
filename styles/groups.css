@@ -349,8 +349,12 @@
   + .group-pagination-btn {
   background-color: #aeceee;
 }
-
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1120px) {
+  .groups-sidebar.groups-sidebar--right {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
   .groups-sidebar {
     display: none;
   }

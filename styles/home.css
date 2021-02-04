@@ -356,7 +356,6 @@
 
 .home-suggestions .home-suggestions__options p {
   flex: 0.8;
-  margin-bottom: 0.5rem;
 }
 .home-suggestions .home-suggestions__options .suggestion-options-container {
   display: flex;
@@ -371,10 +370,11 @@
   align-items: center;
   text-transform: uppercase;
   padding: 0 1rem;
-  margin: 0.5rem auto; 
+  margin: 0.5rem auto;
   font-size: 0.6rem;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.2s;
   border: none;
   color: var(--second-color);
   background-color: rgba(255, 255, 255, 0.2);
@@ -390,7 +390,15 @@
 }
 
 .home-suggestions .home-suggestions__results {
+  display: none;
   margin: 2rem 0;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.home-suggestions .home-suggestions__results.show {
+  display: block;
+  opacity: 1;
 }
 
 .home-suggestions .home-suggestions__results .suggestions-restuls__title {
@@ -812,7 +820,7 @@
   color: var(--main-font-color);
 }
 
-@media screen and (max-width: 960px) { 
+@media screen and (max-width: 960px) {
   .home-posts {
     flex-direction: column;
     align-items: center;
@@ -855,6 +863,10 @@
 }
 
 @media screen and (max-width: 650px) {
+
+  .home-sidebar .home-sidebar__icons {
+    display: flex;
+  }
 
   .home-content {
     padding: 0rem 0.5rem 2rem;

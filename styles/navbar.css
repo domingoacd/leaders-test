@@ -209,13 +209,12 @@
   }
 }
 
-
 @media screen and (max-width: 800px) {
- .nav-menu .nav-menu__logo {
-   display: none;
- }
+  .nav-menu .nav-menu__logo {
+    display: none;
+  }
 
-   .nav-menu .nav-menu__mobile-menu__profile-btn { 
+  .nav-menu .nav-menu__mobile-menu__profile-btn {
     display: block;
   }
 }
@@ -242,7 +241,7 @@
     display: none;
   }
 
-  .nav-menu  .nav-menu__search {
+  .nav-menu .nav-menu__search {
     max-width: 20rem;
     flex: 1;
     margin: 0 1rem;

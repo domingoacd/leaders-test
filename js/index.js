@@ -1,24 +1,24 @@
-
+import activateSuggestionsButtons from './homeSuggestions.js';
 
 const showSideBar = (e) => {
   const sideBar = document.getElementById('sidebar');
-  const overlay = document.querySelector('.j-overlay')
+  const overlay = document.querySelector('.j-overlay');
 
-  sideBar.classList.add('show')
-  overlay.classList.add('show')
+  sideBar.classList.add('show');
+  overlay.classList.add('show');
 
   document.body.classList.add('showing-overlay');
-}
+};
 
 const hideSideBar = (e) => {
   const sideBar = document.getElementById('sidebar');
-  const overlay = document.querySelector('.j-overlay')
+  const overlay = document.querySelector('.j-overlay');
 
-  sideBar.classList.remove('show')
-  overlay.classList.remove('show')
+  sideBar.classList.remove('show');
+  overlay.classList.remove('show');
 
   document.body.classList.remove('showing-overlay');
-}
+};
 
 const attachSideProfileEvents = () => {
   const showSideBarBtn = document.querySelector('.j-open-side-profile');
@@ -26,7 +26,7 @@ const attachSideProfileEvents = () => {
 
   showSideBarBtn?.addEventListener('click', showSideBar);
   hideSideBarBtn?.addEventListener('click', hideSideBar);
-}
+};
 
 const showSideMenu = (e) => {
   const sideMenu = document.getElementById('sidemenu');
@@ -36,7 +36,7 @@ const showSideMenu = (e) => {
   overlay.classList.add('show');
 
   document.body.classList.add('showing-overlay');
-}
+};
 
 const hideSideMenu = (e) => {
   const sideMenu = document.getElementById('sidemenu');
@@ -46,7 +46,7 @@ const hideSideMenu = (e) => {
   overlay.classList.remove('show');
 
   document.body.classList.remove('showing-overlay');
-}
+};
 
 const attachSideMenuEvents = () => {
   const showSideMenuBtn = document.querySelector('.j-open-sidemenu');
@@ -54,10 +54,11 @@ const attachSideMenuEvents = () => {
 
   showSideMenuBtn?.addEventListener('click', showSideMenu);
   hideSideMenuBtn?.addEventListener('click', hideSideMenu);
-}
+};
 
 const startTestFunctionalities = () => {
-  attachSideProfileEvents()
+  attachSideProfileEvents();
   attachSideMenuEvents();
-}
+  activateSuggestionsButtons()
+};
 window.addEventListener('load', startTestFunctionalities);
