@@ -1,4 +1,5 @@
 import activateSuggestionsButtons from './homeSuggestions.js';
+import activatePublishFunctionality from './homePublishPosts.js';
 
 const showSideBar = (e) => {
   const sideBar = document.getElementById('sidebar');
@@ -59,6 +60,7 @@ const attachSideMenuEvents = () => {
 const startTestFunctionalities = () => {
   attachSideProfileEvents();
   attachSideMenuEvents();
-  activateSuggestionsButtons()
+  activateSuggestionsButtons();
+  activatePublishFunctionality();
 };
 window.addEventListener('load', startTestFunctionalities);

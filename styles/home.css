@@ -249,7 +249,7 @@
 .home-content .home-publish-post {
   width: 100%;
   min-height: 3.5rem;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
@@ -258,6 +258,10 @@
   border-radius: 3px;
   background-color: var(--second-color);
   box-shadow: var(--general-shadow);
+}
+
+.home-content .home-publish-post.show {
+  display: flex;
 }
 
 .home-content .home-publish-post form {

@@ -270,11 +270,11 @@
     </nav>
     <main class="home-content">
       <div class="home-publish-options">
-        <button class="home-publish-options__option active">
+        <button class="home-publish-options__option active j-publish-btn" data-publishbtn="update">
           <img src="./assets/paper-plane.png" alt="" class="option-icon" />
           Compartir una actualizacion
         </button>
-        <button class="home-publish-options__option">
+        <button class="home-publish-options__option j-publish-btn" data-publishbtn="picture">
           <img
             src="./assets/camera.png"
             alt=""
@@ -282,7 +282,7 @@
           />
           Subir una foto
         </button>
-        <button class="home-publish-options__option">
+        <button class="home-publish-options__option  j-publish-btn" data-publishbtn="post">
           <img
             src="./assets/write.png"
             alt=""
@@ -292,7 +292,47 @@
         </button>
       </div>
 
-      <div class="home-publish-post">
+      <div class="home-publish-post j-publish-post show" data-publishpost="update">
+        <form action="">
+          <input
+            type="text"
+            class="home-publish-post__user-text-input"
+            placeholder="¿Qué tienes en mente?"
+          />
+          <div class="home-publish-post__buttons">
+            <button class="home-publish-post__button-option">
+              <img src="./assets/camera.png" alt="" />
+            </button>
+            <button class="home-publish-post__button-option">
+              <img src="./assets/video.png" alt="" />
+            </button>
+            <button class="home-publish-post__button-option">
+              <img src="./assets/chain.png" alt="" class="icon-chain" />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="home-publish-post j-publish-post" data-publishpost="picture">
+        <form action="">
+          <input
+            type="text"
+            class="home-publish-post__user-text-input"
+            placeholder="¿Qué tienes en mente?"
+          />
+          <div class="home-publish-post__buttons">
+            <button class="home-publish-post__button-option">
+              <img src="./assets/camera.png" alt="" />
+            </button>
+            <button class="home-publish-post__button-option">
+              <img src="./assets/video.png" alt="" />
+            </button>
+            <button class="home-publish-post__button-option">
+              <img src="./assets/chain.png" alt="" class="icon-chain" />
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="home-publish-post j-publish-post" data-publishpost="post">
         <form action="">
           <input
             type="text"
