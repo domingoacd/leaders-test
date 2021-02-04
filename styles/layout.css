@@ -11,7 +11,7 @@ body.home-layout {
 body.groups-layout {
   display: grid;
   grid-template-columns: 250px auto 250px;
-  grid-template-rows: var(--navbar-height) auto var(--footer-height);
+  grid-template-rows: var(--navbar-height) auto auto;
   grid-template-areas:
     'header header header'
     'sidebar-left content sidebar-right'
@@ -20,7 +20,7 @@ body.groups-layout {
 
 
 @media screen and (max-width: 650px) {
-  body.home-layout {
+  body.home-layout, body.groups-layout {
     grid-template-columns: auto;
     grid-template-areas: "header" "content" "footer";
   }

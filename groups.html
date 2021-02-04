@@ -7,48 +7,113 @@
     <title>Grupos</title>
   </head>
   <body class="groups-layout">
+    <div class="overlay j-overlay"></div>
     <nav class="nav-menu">
-      <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
-      <div class="nav-menu__icons">
-        <a href="" class="icon yellow"
-          ><img src="./assets/comentando.png" alt=""
-        /></a>
-        <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
-        <a href="" class="icon"
-          ><img src="./assets/notification.png" alt=""
-        /></a>
+      <div class="nav-menu__wrapper nav-menu__desktop-menu">
+        <img src="./assets/logo.png" alt="" class="nav-menu__logo" />
+        <div class="nav-menu__icons">
+          <a href="" class="icon yellow"
+            ><img src="./assets/comentando.png" alt=""
+          /></a>
+          <a href="" class="icon"><img src="./assets/user.png" alt="" /></a>
+          <a href="" class="icon"
+            ><img src="./assets/notification.png" alt=""
+          /></a>
+        </div>
+        <form action="" class="nav-menu__search">
+          <span class="search-input-container">
+            <button type="submit">
+              <img src="./assets/lupa.png" alt="" />
+            </button>
+            <input type="text" class="search-input" placeholder="Buscar" />
+          </span>
+          <select name="" id="" class="search-select">
+            <option value="">Personas</option>
+            <option value="">Empleos</option>
+            <option value="">Empresa</option>
+          </select>
+        </form>
+        <ul class="nav-menu__links">
+          <li class="current">
+            <a href="./index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="">Perfil</a>
+          </li>
+          <li>
+            <a href="">Conexiones</a>
+          </li>
+          <li>
+            <a href="">Empresas</a>
+          </li>
+          <li>
+            <a href="">Trabajos</a>
+          </li>
+          <li>
+            <a href="./groups.html">Grupos</a>
+          </li>
+        </ul>
       </div>
-      <form action="" class="nav-menu__search">
-        <span class="search-input-container">
-          <button type="submit">
-            <img src="./assets/lupa.png" alt="" />
-          </button>
-          <input type="text" class="search-input" placeholder="Buscar" />
-        </span>
-        <select name="" id="" class="search-select">
-          <option value="">Personas</option>
-          <option value="">Empleos</option>
-          <option value="">Empresa</option>
-        </select>
-      </form>
-      <ul class="nav-menu__links">
-        <li>
-          <a href="./index.html">Inicio</a>
+      <div class="nav-menu__mobile-menu">
+        <button class="nav-menu__mobile-menu__profile-btn j-open-side-profile">
+          <img src="./assets/pic.png" alt="" />
+        </button>
+        <form action="" class="nav-menu__search">
+          <span class="search-input-container">
+            <button type="submit">
+              <img src="./assets/lupa.png" alt="" />
+            </button>
+            <input type="text" class="search-input" placeholder="Buscar" />
+          </span>
+        </form>
+        <button class="nav-menu__mobile-menu__open-btn j-open-sidemenu">
+          <img src="./assets/menu.png" alt="" />
+        </button>
+      </div>
+    </nav>
+        <nav class="sidemenu" id="sidemenu">
+      <div class="sidemenu__top">
+        <img src="./assets/logo.png" alt="" class="sidemenu__logo" />
+        <button class="sidemenu__close-btn j-close-side-menu j-close-sidemenu">
+          <img src="./assets/cancel.png" alt="" />
+        </button>
+      </div>
+      <ul class="sidemenu__container">
+        <li class="sidemenu__container__item current">
+          <a href=""
+            ><img
+              src="./assets/home.png"
+              alt=""
+              class="sidemenu__container__item__icon"
+            />Inicio</a
+          >
         </li>
-        <li>
-          <a href="">Perfil</a>
+        <li class="sidemenu__container__item">
+          <a href=""
+            ><img
+              src="./assets/user-sidemenu.png"
+              alt=""
+              class="sidemenu__container__item__icon"
+            />Perfil</a
+          >
         </li>
-        <li>
-          <a href="">Conexiones</a>
+        <li class="sidemenu__container__item">
+          <a href=""
+            ><img
+              src="./assets/hand-shake.png"
+              alt=""
+              class="sidemenu__container__item__icon"
+            />Conexiones</a
+          >
         </li>
-        <li>
-          <a href="">Empresas</a>
+        <li class="sidemenu__container__item">
+          <a href=""><img src="./assets/business.png" alt="" class="sidemenu__container__item__icon">Empresas</a>
         </li>
-        <li>
-          <a href="">Trabajos</a>
+        <li class="sidemenu__container__item">
+          <a href=""><img src="./assets/suitcase-white.png" alt="" class="sidemenu__container__item__icon">Trabajos</a>
         </li>
-        <li class="current">
-          <a href="./groups.html">Grupos</a>
+        <li class="sidemenu__container__item">
+          <a href="./groups.html"><img src="./assets/group.png" alt="" class="sidemenu__container__item__icon">Grupos</a>
         </li>
       </ul>
     </nav>
@@ -240,5 +305,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="./js/index.js"></script>
   </body>
 </html>
