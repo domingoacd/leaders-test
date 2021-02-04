@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 }
 
 .nav-menu__wrapper {
@@ -12,7 +12,7 @@
   max-width: var(--max-width-expand);
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -153,10 +153,11 @@
   align-items: center;
 }
 
-.nav-menu__mobile-menu .nav-menu__mobile-menu__profile-btn {
+.nav-menu .nav-menu__mobile-menu__profile-btn {
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
+  display: none;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
@@ -164,7 +165,7 @@
   background-color: transparent;
 }
 
-.nav-menu__mobile-menu .nav-menu__mobile-menu__profile-btn img {
+.nav-menu .nav-menu__mobile-menu__profile-btn img {
   position: absolute;
   top: 0;
   left: 0;
@@ -172,29 +173,51 @@
   height: 100%;
 }
 
-.nav-menu__mobile-menu .nav-menu__logo {
+.nav-menu .nav-menu__logo {
   width: 100px;
 }
 
-.nav-menu__mobile-menu .nav-menu__search {
+.nav-menu .nav-menu__search {
 }
 
-.nav-menu__mobile-menu .nav-menu__mobile-menu__open-btn {
+.nav-menu .nav-menu__mobile-menu__open-btn {
   position: relative;
   width: 1.5rem;
   height: 1.5rem;
+  display: none;
   overflow: hidden;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
 
-.nav-menu__mobile-menu .nav-menu__mobile-menu__open-btn img {
+.nav-menu .nav-menu__mobile-menu__open-btn img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .nav-menu__links {
+    display: none;
+  }
+
+  .nav-menu .nav-menu__mobile-menu__open-btn {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+ .nav-menu .nav-menu__logo {
+   display: none;
+ }
+
+   .nav-menu .nav-menu__mobile-menu__profile-btn { 
+    display: block;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -206,21 +229,26 @@
     padding: 0 0.5rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   }
-  .nav-menu .nav-menu__desktop-menu {
+
+  .nav-menu .nav-menu__icons {
     display: none;
   }
 
-  .nav-menu .nav-menu__mobile-menu {
-    display: flex;
+  .nav-menu .nav-menu__links {
+    display: none;
   }
 
-  .nav-menu .nav-menu__mobile-menu .nav-menu__search {
-    max-width: 30rem;
+  .nav-menu__search .search-select {
+    display: none;
+  }
+
+  .nav-menu  .nav-menu__search {
+    max-width: 20rem;
     flex: 1;
     margin: 0 1rem;
   }
 
-  .nav-menu .nav-menu__mobile-menu .nav-menu__search .search-input-container {
+  .nav-menu .nav-menu__search .search-input-container {
     width: 100%;
   }
 }

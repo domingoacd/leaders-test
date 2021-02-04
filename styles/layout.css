@@ -19,7 +19,7 @@ body.groups-layout {
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   body.home-layout, body.groups-layout {
     grid-template-columns: auto;
     grid-template-areas: "header" "content" "footer";

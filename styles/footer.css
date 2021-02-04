@@ -1,6 +1,6 @@
 .footer {
   grid-area: footer;
-  padding: 0 3rem;
+  padding: 1rem 0.5rem 0.5rem;
   font-size: 0.7rem;
   color: #fff;
   background-color: var(--third-color);
@@ -8,12 +8,16 @@
 
 .footer .footer__wrapper {
   height: 100%;
-  max-width: 75rem;
+  max-width: var(--max-width-expand);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
+}
+
+.footer .copyright {
+  margin-bottom: 0.5rem;
 }
 
 .footer .footer__links {
@@ -21,6 +25,7 @@
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 0.5rem;
 }
 
 .footer .footer__links li{
