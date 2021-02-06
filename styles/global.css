@@ -35,6 +35,10 @@
   --group-sidebar-width: 250px;
 }
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--first-color);
 }

@@ -211,6 +211,9 @@
   width: calc(90vw - var(--group-sidebar-width) - var(--group-sidebar-width));
   max-width: var(--max-width-expand);
   overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+   -webkit-overflow-scrolling: touch;
 }
 
 .groups-content
