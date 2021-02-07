@@ -7,6 +7,24 @@
     <title>Grupos</title>
   </head>
   <body class="groups-layout">
+    <div class="modal modal--create-group j-modal">
+      <div class="modal__content">
+        <button class="modal__content__close j-close-modal">
+          <img src="./assets/cancel.png" alt="" />
+        </button>
+        <form action="" class="create-group-form">
+          <label for="create-group-name" class="create-group-form__field"
+            >Nombre del grupo:
+            <input type="text" required id="create-group-name" />
+          </label>
+          <label for="create-group-description" class="create-group-form__field"
+            >Descripción del grupo:
+            <input type="text" required id="create-group-description" />
+          </label>
+          <button type="submit" id="create-group">Crear</button>
+        </form>
+      </div>
+    </div>
     <div class="overlay j-overlay"></div>
     <nav class="nav-menu">
       <div class="nav-menu__wrapper nav-menu__desktop-menu">
@@ -39,7 +57,7 @@
           </select>
         </form>
         <ul class="nav-menu__links">
-          <li >
+          <li>
             <a href="./index.html">Inicio</a>
           </li>
           <li>
@@ -145,6 +163,7 @@
 
         <button
           class="groups-content__head__create-group group-btn group-btn--blue"
+          id="open-create-group"
         >
           Crear página de grupo
         </button>
@@ -159,7 +178,10 @@
       </p>
       <section class="groups-content__groups-container">
         <div class="groups-content__groups-container__header">
-          <div class="groups-content__groups-container__header__left-side j-carousel-title active" data-cartitle="car-1">
+          <div
+            class="groups-content__groups-container__header__left-side j-carousel-title active"
+            data-cartitle="car-1"
+          >
             <div class="left-side__icon">
               <img src="./assets/group-yellow.png" alt="" />
             </div>
@@ -170,7 +192,10 @@
               </p>
             </div>
           </div>
-          <div class="groups-content__groups-container__header__left-side joined-groups j-carousel-title" data-cartitle="car-2">
+          <div
+            class="groups-content__groups-container__header__left-side joined-groups j-carousel-title"
+            data-cartitle="car-2"
+          >
             <div class="left-side__icon">
               <img src="./assets/group-yellow.png" alt="" />
             </div>
@@ -182,43 +207,57 @@
             </div>
           </div>
           <div class="groups-content__groups-container__header__right-side">
-            <button class="right-side__button group-btn group-btn--blue j-show-carousel-btn" data-showbtn="car-1">
+            <button
+              class="right-side__button group-btn group-btn--blue j-show-carousel-btn"
+              data-showbtn="car-1"
+            >
               Mis Grupos</button
-            ><button class="right-side__button group-btn group-btn--aqua j-show-carousel-btn" data-showbtn="car-2">
+            ><button
+              class="right-side__button group-btn group-btn--aqua j-show-carousel-btn"
+              data-showbtn="car-2"
+            >
               Grupos unidos
             </button>
           </div>
         </div>
-        <div class="groups-content__cards-container j-carousel-container active" data-carousel="car-1">
+        <div
+          class="groups-content__cards-container j-carousel-container active"
+          data-carousel="car-1"
+        >
           <div class="groups-content__cards-container__carousel">
-            <div class="groups-content__cards-container__carousel__col" id="mygroup-col-1">
+            <div
+              class="groups-content__cards-container__carousel__col"
+              id="mygroup-col-1"
+            >
               <div class="group-card">
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -226,29 +265,31 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -256,153 +297,68 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
-                  <button class="group-btn">Dejar Grupo</button>
-                </div>
-              </div>
-            </div>
-            <div class="groups-content__cards-container__carousel__col" id="mygroup-col-2">
-              <div class="group-card">
-                <div class="group-card__pic">
-                  <img src="./assets/group.png" alt="" />
-                </div>
-    
-                <div class="group-card__information">
-                  <h4 class="group-card__information__group-name">
-                    Nombre del grupo ejemplo
-                  </h4>
-                  <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
-                  </p>
-                </div>
-    
-                <div class="group-card__members">
-                  <h4 class="group-card__members__title">Miembros</h4>
-                  <p class="group-card__members__amount">
-                    34 <span>miembros</span>
-                  </p>
-                </div>
-    
-                <div class="group-card__buttons">
-                  <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
-                  <button class="group-btn">Dejar Grupo</button>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-card__pic">
-                  <img src="./assets/group.png" alt="" />
-                </div>
-    
-                <div class="group-card__information">
-                  <h4 class="group-card__information__group-name">
-                    Nombre del grupo ejemplo
-                  </h4>
-                  <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
-                  </p>
-                </div>
-    
-                <div class="group-card__members">
-                  <h4 class="group-card__members__title">Miembros</h4>
-                  <p class="group-card__members__amount">
-                    34 <span>miembros</span>
-                  </p>
-                </div>
-    
-                <div class="group-card__buttons">
-                  <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
-                  <button class="group-btn">Dejar Grupo</button>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-card__pic">
-                  <img src="./assets/group.png" alt="" />
-                </div>
-    
-                <div class="group-card__information">
-                  <h4 class="group-card__information__group-name">
-                    Nombre del grupo ejemplo
-                  </h4>
-                  <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
-                  </p>
-                </div>
-    
-                <div class="group-card__members">
-                  <h4 class="group-card__members__title">Miembros</h4>
-                  <p class="group-card__members__amount">
-                    34 <span>miembros</span>
-                  </p>
-                </div>
-    
-                <div class="group-card__buttons">
-                  <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
             </div>
-            <div class="groups-content__cards-container__carousel__col" id="mygroup-col-3">
+            <div
+              class="groups-content__cards-container__carousel__col"
+              id="mygroup-col-2"
+            >
               <div class="group-card">
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -410,29 +366,31 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -440,71 +398,191 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
+                  <button class="group-btn">Dejar Grupo</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="groups-content__cards-container__carousel__col"
+              id="mygroup-col-3"
+            >
+              <div class="group-card">
+                <div class="group-card__pic">
+                  <img src="./assets/group.png" alt="" />
+                </div>
+
+                <div class="group-card__information">
+                  <h4 class="group-card__information__group-name">
+                    Nombre del grupo ejemplo
+                  </h4>
+                  <p class="groud-card__information__group-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
+                  </p>
+                </div>
+
+                <div class="group-card__members">
+                  <h4 class="group-card__members__title">Miembros</h4>
+                  <p class="group-card__members__amount">
+                    34 <span>miembros</span>
+                  </p>
+                </div>
+
+                <div class="group-card__buttons">
+                  <button class="group-btn group-btn--blue">Ver grupo</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
+                  <button class="group-btn">Dejar Grupo</button>
+                </div>
+              </div>
+              <div class="group-card">
+                <div class="group-card__pic">
+                  <img src="./assets/group.png" alt="" />
+                </div>
+
+                <div class="group-card__information">
+                  <h4 class="group-card__information__group-name">
+                    Nombre del grupo ejemplo
+                  </h4>
+                  <p class="groud-card__information__group-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
+                  </p>
+                </div>
+
+                <div class="group-card__members">
+                  <h4 class="group-card__members__title">Miembros</h4>
+                  <p class="group-card__members__amount">
+                    34 <span>miembros</span>
+                  </p>
+                </div>
+
+                <div class="group-card__buttons">
+                  <button class="group-btn group-btn--blue">Ver grupo</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
+                  <button class="group-btn">Dejar Grupo</button>
+                </div>
+              </div>
+              <div class="group-card">
+                <div class="group-card__pic">
+                  <img src="./assets/group.png" alt="" />
+                </div>
+
+                <div class="group-card__information">
+                  <h4 class="group-card__information__group-name">
+                    Nombre del grupo ejemplo
+                  </h4>
+                  <p class="groud-card__information__group-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
+                  </p>
+                </div>
+
+                <div class="group-card__members">
+                  <h4 class="group-card__members__title">Miembros</h4>
+                  <p class="group-card__members__amount">
+                    34 <span>miembros</span>
+                  </p>
+                </div>
+
+                <div class="group-card__buttons">
+                  <button class="group-btn group-btn--blue">Ver grupo</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="groups-content__cards-container__pagination">
-            <a href="#mygroup-col-1" class="group-pagination-btn j-group-p-btn active"></a>
-            <a href="#mygroup-col-2" class="group-pagination-btn j-group-p-btn"></a>
-            <a href="#mygroup-col-3" class="group-pagination-btn j-group-p-btn"></a>
+          <div class="groups-content__cards-container__pagination j-pagination">
+            <a
+              href="#mygroup-col-1"
+              class="group-pagination-btn j-group-p-btn active"
+            ></a>
+            <a
+              href="#mygroup-col-2"
+              class="group-pagination-btn j-group-p-btn"
+            ></a>
+            <a
+              href="#mygroup-col-3"
+              class="group-pagination-btn j-group-p-btn"
+            ></a>
           </div>
         </div>
-        <div class="groups-content__cards-container j-carousel-container" data-carousel="car-2">
+        <div
+          class="groups-content__cards-container j-carousel-container"
+          data-carousel="car-2"
+        >
           <div class="groups-content__cards-container__carousel">
-            <div class="groups-content__cards-container__carousel__col" id="suggroup-col-1">
+            <div
+              class="groups-content__cards-container__carousel__col"
+              id="suggroup-col-1"
+            >
               <div class="group-card">
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -512,29 +590,31 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -542,153 +622,68 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
-                  <button class="group-btn">Dejar Grupo</button>
-                </div>
-              </div>
-            </div>
-            <div class="groups-content__cards-container__carousel__col" id="suggroup-col-2">
-              <div class="group-card">
-                <div class="group-card__pic">
-                  <img src="./assets/group.png" alt="" />
-                </div>
-    
-                <div class="group-card__information">
-                  <h4 class="group-card__information__group-name">
-                    Nombre del grupo ejemplo
-                  </h4>
-                  <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
-                  </p>
-                </div>
-    
-                <div class="group-card__members">
-                  <h4 class="group-card__members__title">Miembros</h4>
-                  <p class="group-card__members__amount">
-                    34 <span>miembros</span>
-                  </p>
-                </div>
-    
-                <div class="group-card__buttons">
-                  <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
-                  <button class="group-btn">Dejar Grupo</button>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-card__pic">
-                  <img src="./assets/group.png" alt="" />
-                </div>
-    
-                <div class="group-card__information">
-                  <h4 class="group-card__information__group-name">
-                    Nombre del grupo ejemplo
-                  </h4>
-                  <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
-                  </p>
-                </div>
-    
-                <div class="group-card__members">
-                  <h4 class="group-card__members__title">Miembros</h4>
-                  <p class="group-card__members__amount">
-                    34 <span>miembros</span>
-                  </p>
-                </div>
-    
-                <div class="group-card__buttons">
-                  <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
-                  <button class="group-btn">Dejar Grupo</button>
-                </div>
-              </div>
-              <div class="group-card">
-                <div class="group-card__pic">
-                  <img src="./assets/group.png" alt="" />
-                </div>
-    
-                <div class="group-card__information">
-                  <h4 class="group-card__information__group-name">
-                    Nombre del grupo ejemplo
-                  </h4>
-                  <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
-                  </p>
-                </div>
-    
-                <div class="group-card__members">
-                  <h4 class="group-card__members__title">Miembros</h4>
-                  <p class="group-card__members__amount">
-                    34 <span>miembros</span>
-                  </p>
-                </div>
-    
-                <div class="group-card__buttons">
-                  <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
             </div>
-            <div class="groups-content__cards-container__carousel__col" id="suggroup-col-3">
+            <div
+              class="groups-content__cards-container__carousel__col"
+              id="suggroup-col-2"
+            >
               <div class="group-card">
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -696,29 +691,31 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
@@ -726,39 +723,151 @@
                 <div class="group-card__pic">
                   <img src="./assets/group.png" alt="" />
                 </div>
-    
+
                 <div class="group-card__information">
                   <h4 class="group-card__information__group-name">
                     Nombre del grupo ejemplo
                   </h4>
                   <p class="groud-card__information__group-description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
-                    nostrud exerci tation
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
                   </p>
                 </div>
-    
+
                 <div class="group-card__members">
                   <h4 class="group-card__members__title">Miembros</h4>
                   <p class="group-card__members__amount">
                     34 <span>miembros</span>
                   </p>
                 </div>
-    
+
                 <div class="group-card__buttons">
                   <button class="group-btn group-btn--blue">Ver grupo</button>
-                  <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
+                  <button class="group-btn">Dejar Grupo</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="groups-content__cards-container__carousel__col"
+              id="suggroup-col-3"
+            >
+              <div class="group-card">
+                <div class="group-card__pic">
+                  <img src="./assets/group.png" alt="" />
+                </div>
+
+                <div class="group-card__information">
+                  <h4 class="group-card__information__group-name">
+                    Nombre del grupo ejemplo
+                  </h4>
+                  <p class="groud-card__information__group-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
+                  </p>
+                </div>
+
+                <div class="group-card__members">
+                  <h4 class="group-card__members__title">Miembros</h4>
+                  <p class="group-card__members__amount">
+                    34 <span>miembros</span>
+                  </p>
+                </div>
+
+                <div class="group-card__buttons">
+                  <button class="group-btn group-btn--blue">Ver grupo</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
+                  <button class="group-btn">Dejar Grupo</button>
+                </div>
+              </div>
+              <div class="group-card">
+                <div class="group-card__pic">
+                  <img src="./assets/group.png" alt="" />
+                </div>
+
+                <div class="group-card__information">
+                  <h4 class="group-card__information__group-name">
+                    Nombre del grupo ejemplo
+                  </h4>
+                  <p class="groud-card__information__group-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
+                  </p>
+                </div>
+
+                <div class="group-card__members">
+                  <h4 class="group-card__members__title">Miembros</h4>
+                  <p class="group-card__members__amount">
+                    34 <span>miembros</span>
+                  </p>
+                </div>
+
+                <div class="group-card__buttons">
+                  <button class="group-btn group-btn--blue">Ver grupo</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
+                  <button class="group-btn">Dejar Grupo</button>
+                </div>
+              </div>
+              <div class="group-card">
+                <div class="group-card__pic">
+                  <img src="./assets/group.png" alt="" />
+                </div>
+
+                <div class="group-card__information">
+                  <h4 class="group-card__information__group-name">
+                    Nombre del grupo ejemplo
+                  </h4>
+                  <p class="groud-card__information__group-description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                    quis nostrud exerci tation
+                  </p>
+                </div>
+
+                <div class="group-card__members">
+                  <h4 class="group-card__members__title">Miembros</h4>
+                  <p class="group-card__members__amount">
+                    34 <span>miembros</span>
+                  </p>
+                </div>
+
+                <div class="group-card__buttons">
+                  <button class="group-btn group-btn--blue">Ver grupo</button>
+                  <button class="group-btn group-btn--aqua">
+                    Enviar mensaje
+                  </button>
                   <button class="group-btn">Dejar Grupo</button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="groups-content__cards-container__pagination">
-            <a href="#suggroup-col-1" class="group-pagination-btn j-group-p-btn active"></a>
-            <a href="#suggroup-col-2" class="group-pagination-btn j-group-p-btn"></a>
-            <a href="#suggroup-col-3" class="group-pagination-btn j-group-p-btn"></a>
+          <div class="groups-content__cards-container__pagination j-pagination">
+            <a
+              href="#suggroup-col-1"
+              class="group-pagination-btn j-group-p-btn active"
+            ></a>
+            <a
+              href="#suggroup-col-2"
+              class="group-pagination-btn j-group-p-btn"
+            ></a>
+            <a
+              href="#suggroup-col-3"
+              class="group-pagination-btn j-group-p-btn"
+            ></a>
           </div>
         </div>
       </section>
@@ -801,6 +910,33 @@
       </div>
     </footer>
 
+    <template id="group-card-template">
+      <div class="group-card">
+        <div class="group-card__pic">
+          <img src="./assets/group.png" alt="" />
+        </div>
+
+        <div class="group-card__information">
+          <h4 class="group-card__information__group-name">
+            
+          </h4>
+          <p class="groud-card__information__group-description">
+
+          </p>
+        </div>
+
+        <div class="group-card__members">
+          <h4 class="group-card__members__title">Miembro</h4>
+          <p class="group-card__members__amount">1 <span>miembros</span></p>
+        </div>
+
+        <div class="group-card__buttons">
+          <button class="group-btn group-btn--blue">Ver grupo</button>
+          <button class="group-btn group-btn--aqua">Enviar mensaje</button>
+          <button class="group-btn">Dejar Grupo</button>
+        </div>
+      </div>
+    </template>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

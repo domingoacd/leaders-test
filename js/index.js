@@ -1,7 +1,7 @@
 import activateSuggestionsButtons from './homeSuggestions.js';
 import activatePublishFunctionality from './homePublishPosts.js';
 import activateGroupsCarousel from "./groupsCarousel.js";
-
+import activateCreateGroup from './groupsCreateGroup.js';
 const showSideBar = (e) => {
   const sideBar = document.getElementById('sidebar');
   const overlay = document.querySelector('.j-overlay');
@@ -63,6 +63,7 @@ const startTestFunctionalities = () => {
   attachSideMenuEvents();
   activateSuggestionsButtons();
   activatePublishFunctionality();
-  activateGroupsCarousel()
+  activateGroupsCarousel();
+  activateCreateGroup();
 };
 window.addEventListener('load', startTestFunctionalities);
