@@ -53,11 +53,13 @@
             </button>
             <input type="text" class="search-input" placeholder="Buscar" />
           </span>
-          <select name="" id="" class="search-select">
-            <option value="">Personas</option>
-            <option value="">Empleos</option>
-            <option value="">Empresa</option>
-          </select>
+          <div class="search-select-container">
+            <select name="" id="" class="search-select">
+              <option value="">Personas</option>
+              <option value="">Empleos</option>
+              <option value="">Empresa</option>
+            </select>
+          </div>
         </form>
         <ul class="nav-menu__links">
           <li>
@@ -200,7 +202,9 @@
               >
             </p>
           </div>
-          <a class="recommendation-more" href=""> <img src="./assets/plus.png" alt=""> </a>
+          <a class="recommendation-more" href="">
+            <img src="./assets/plus.png" alt="" />
+          </a>
         </div>
         <div class="recommendation-box">
           <img class="recommendation-avatar" src="./assets/recomm-pic.png" />
@@ -216,7 +220,9 @@
               >
             </p>
           </div>
-          <a class="recommendation-more" href=""> <img src="./assets/plus.png" alt=""> </a>
+          <a class="recommendation-more" href="">
+            <img src="./assets/plus.png" alt="" />
+          </a>
         </div>
         <div class="recommendation-box">
           <img class="recommendation-avatar" src="./assets/recomm-pic.png" />
@@ -232,7 +238,9 @@
               >
             </p>
           </div>
-          <a class="recommendation-more" href=""> <img src="./assets/plus.png" alt=""> </a>
+          <a class="recommendation-more" href="">
+            <img src="./assets/plus.png" alt="" />
+          </a>
         </div>
         <div class="recommendation-box">
           <img class="recommendation-avatar" src="./assets/recomm-pic.png" />
@@ -248,7 +256,9 @@
               >
             </p>
           </div>
-          <a class="recommendation-more" href=""> <img src="./assets/plus.png" alt=""> </a>
+          <a class="recommendation-more" href="">
+            <img src="./assets/plus.png" alt="" />
+          </a>
         </div>
         <div class="recommendation-box">
           <img class="recommendation-avatar" src="./assets/recomm-pic.png" />
@@ -264,7 +274,9 @@
               >
             </p>
           </div>
-          <a class="recommendation-more" href=""> <img src="./assets/plus.png" alt=""> </a>
+          <a class="recommendation-more" href="">
+            <img src="./assets/plus.png" alt="" />
+          </a>
         </div>
         <div class="recommendation-box">
           <img class="recommendation-avatar" src="./assets/recomm-pic.png" />
@@ -280,7 +292,9 @@
               >
             </p>
           </div>
-          <a class="recommendation-more" href=""> <img src="./assets/plus.png" alt=""> </a>
+          <a class="recommendation-more" href="">
+            <img src="./assets/plus.png" alt="" />
+          </a>
         </div>
       </div>
     </div>
@@ -691,7 +705,7 @@
           <div class="groups-content__cards-container__carousel">
             <div
               class="groups-content__cards-container__carousel__col"
-              id="suggroup-col-1"
+              id="jointgroup-col-1"
             >
               <div class="group-card">
                 <div class="group-card__pic">
@@ -792,7 +806,7 @@
             </div>
             <div
               class="groups-content__cards-container__carousel__col"
-              id="suggroup-col-2"
+              id="jointgroup-col-2"
             >
               <div class="group-card">
                 <div class="group-card__pic">
@@ -893,7 +907,7 @@
             </div>
             <div
               class="groups-content__cards-container__carousel__col"
-              id="suggroup-col-3"
+              id="jointgroup-col-3"
             >
               <div class="group-card">
                 <div class="group-card__pic">
@@ -996,15 +1010,15 @@
 
           <div class="groups-content__cards-container__pagination j-pagination">
             <a
-              href="#suggroup-col-1"
+              href="#jointgroup-col-1"
               class="group-pagination-btn j-group-p-btn active"
             ></a>
             <a
-              href="#suggroup-col-2"
+              href="#jointgroup-col-2"
               class="group-pagination-btn j-group-p-btn"
             ></a>
             <a
-              href="#suggroup-col-3"
+              href="#jointgroup-col-3"
               class="group-pagination-btn j-group-p-btn"
             ></a>
           </div>
@@ -1032,10 +1046,12 @@
           </li>
           <li>
             Idioma
-            <select name="" id="" class="footer-languaje-select">
-              <option value="">Español</option>
-              <option value="">Inglés</option>
-            </select>
+            <div class="footer-languaje-select-container">
+              <select name="" id="" class="footer-languaje-select">
+                <option value="">Español</option>
+                <option value="">Inglés</option>
+              </select>
+            </div>
           </li>
           <li>
             <form action="" class="footer-email-subscribe">
@@ -1072,6 +1088,6 @@
         </div>
       </div>
     </template>
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/groups.js"></script>
   </body>
 </html>

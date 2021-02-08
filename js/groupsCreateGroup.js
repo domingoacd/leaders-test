@@ -30,14 +30,14 @@ const activateCreateGroupBtn = () => {
 
   function createNewPaginationWithNumber(columnsAmount) {
     const paginationContainer = document.querySelector(
-      '.j-carousel-container[data-carousel="car-1"] .j-pagination'
+      '.j-carousel-container[data-carousel="car-2"] .j-pagination'
     );
     const paginationAmount = paginationContainer.querySelectorAll(
       '.j-group-p-btn'
     ).length;
     if (paginationAmount !== columnsAmount) {
       const newPaginationElement = document.createElement('a');
-      newPaginationElement.href = `#mygroup-col-${columnsAmount}`;
+      newPaginationElement.href = `#jointgroup-col-${columnsAmount}`;
       newPaginationElement.classList.add(
         'group-pagination-btn',
         'j-group-p-btn'
@@ -49,7 +49,7 @@ const activateCreateGroupBtn = () => {
 
   function insertCardIntoDocument(card) {
     const container = document.querySelector(
-      '.j-carousel-container[data-carousel="car-1"]'
+      '.j-carousel-container[data-carousel="car-2"]'
     );
     const carousel = container.querySelector(
       '.groups-content__cards-container__carousel'
@@ -70,7 +70,7 @@ const activateCreateGroupBtn = () => {
         currentColumn.classList.add(
           'groups-content__cards-container__carousel__col'
         );
-        currentColumn.id = `mygroup-col-${columnsCount + 1}`;
+        currentColumn.id = `jointgroup-col-${columnsCount + 1}`;
         columnsCount++;
       }
       currentColumn.appendChild(newAllCards[current]);
@@ -119,6 +119,7 @@ const activateCreateGroupBtn = () => {
     }
 
     createNewGroupCard(data);
+    hideLoader();
   }
 
   function saveInAPI(data) {
