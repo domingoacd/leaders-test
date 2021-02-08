@@ -6,7 +6,24 @@ const activateCreateGroupBtn = () => {
   const loader = document.getElementById('loader');
   const groupNameInput = document.getElementById('create-group-name');
   const groupDescriptionInput = document.getElementById('create-group-description');
+  const succesMessage = document.getElementById('scsmessage');
+  const errorMessage = document.getElementById('errmessage');
+
   const APIURL = '';
+
+  function showMessageOfType (type) {
+    if (type === 'success') {
+      succesMessage.classList.add('show');
+      setTimeout(() => {
+        succesMessage.classList.remove('show');
+      }, 1500);
+    } else {
+      errorMessage.classList.add('show');
+      setTimeout(() => {
+        errorMessage.classList.remove('show');
+      }, 1500);
+    }
+  }
 
   function openCreateGroupModal(e) {
     const modal = document.querySelector('.j-modal');
@@ -120,6 +137,7 @@ const activateCreateGroupBtn = () => {
 
     createNewGroupCard(data);
     hideLoader();
+    showMessageOfType('success');
   }
 
   function saveInAPI(data) {
@@ -129,16 +147,20 @@ const activateCreateGroupBtn = () => {
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
 
         hideLoader();
         if (result.status === 'ok') {
           createNewGroupCard(data);
+          showMessageOfType('success');
         } else {
-          //showErrorMessage();
+          showMessageOfType('error');
         }
       })
-      .catch((err) => console.error('Error fetching groups from API', err));
+      .catch((err) => {
+        console.error('Error fetching groups from API', err);
+        hideLoader();
+        showMessageOfType('error');
+      });
   }
 
   function cleanModalInputs() {
