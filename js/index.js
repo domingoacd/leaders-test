@@ -2,6 +2,7 @@ import activateSuggestionsButtons from './homeSuggestions.js';
 import activatePublishFunctionality from './homePublishPosts.js';
 import activateGroupsCarousel from "./groupsCarousel.js";
 import activateCreateGroup from './groupsCreateGroup.js';
+const publishPostInput = document.getElementById('publish-post-input');
 const showSideBar = (e) => {
   const sideBar = document.getElementById('sidebar');
   const overlay = document.querySelector('.j-overlay');
@@ -58,12 +59,17 @@ const attachSideMenuEvents = () => {
   hideSideMenuBtn.addEventListener('click', hideSideMenu);
 };
 
+function handlePostInput(e) {
+  publishPostInput.classList.add('active')
+}
 const startTestFunctionalities = () => {
+  publishPostInput.addEventListener('click', handlePostInput);
   attachSideProfileEvents();
   attachSideMenuEvents();
   activateSuggestionsButtons();
   activatePublishFunctionality();
   activateGroupsCarousel();
   activateCreateGroup();
+
 };
 window.addEventListener('load', startTestFunctionalities);

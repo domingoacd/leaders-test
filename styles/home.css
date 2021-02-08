@@ -308,11 +308,7 @@
 .home-content
   .home-publish-post
   form
-  .home-publish-post__user-text-input:active,
-.home-content
-  .home-publish-post
-  form
-  .home-publish-post__user-text-input:focus {
+  .home-publish-post__user-text-input.active{
   outline: none;
   height: 5rem;
   width: 100%;
