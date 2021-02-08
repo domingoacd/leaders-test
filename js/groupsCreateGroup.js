@@ -3,7 +3,8 @@ const activateCreateGroupBtn = () => {
   const closeModalButton = document.querySelector('.j-close-modal');
   const createGroupBtn = document.getElementById('create-group');
   const groupCardTemplate = document.getElementById('group-card-template');
-  const APIURL = '';
+  const loader = document.getElementById('loader');
+  const APIURL = 'http://localhost/test-leaders/add.php';
 
   function openCreateGroupModal(e) {
     const modal = document.querySelector('.j-modal');
@@ -14,6 +15,14 @@ const activateCreateGroupBtn = () => {
     const modal = document.querySelector('.j-modal');
 
     modal.classList.remove('show');
+  }
+
+  function hideLoader() {
+    loader.classList.remove('show');
+  }
+
+  function showLoader() {
+    loader.classList.add('show');
   }
 
   function createNewPaginationWithNumber(columnsAmount) {
@@ -59,7 +68,7 @@ const activateCreateGroupBtn = () => {
         currentColumn.classList.add(
           'groups-content__cards-container__carousel__col'
         );
-        currentColumn.id = `mygroup-col-${columnsCount+1}`;
+        currentColumn.id = `mygroup-col-${columnsCount + 1}`;
         columnsCount++;
       }
       currentColumn.appendChild(newAllCards[current]);
@@ -110,6 +119,18 @@ const activateCreateGroupBtn = () => {
     createNewGroupCard(data);
   }
 
+  function saveInAPI(data) {
+    fetch(APIURL, {
+      method: 'POST',
+      body: JSON.stringify(data)
+    })
+      .then((res) => res.json()).then(result => {
+        createNewGroupCard(data);
+        hideLoader();
+      })  
+      .catch((err) => console.error('Error fetching groups from API', err));
+  }
+
   function createGroup(e) {
     e.preventDefault();
     const data = {
@@ -125,7 +146,9 @@ const activateCreateGroupBtn = () => {
       formData.append(property, data[property]);
     }
 
+    showLoader();
     if (APIURL.length > 0) {
+      saveInAPI(data);
     } else {
       saveInLocalStorage(data);
     }
