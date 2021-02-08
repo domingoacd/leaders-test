@@ -238,6 +238,7 @@
   border-color: var(--dark-border-color);
   background-color: var(--second-color);
 }
+
 .home-content .home-publish-options .home-publish-options__option .option-icon {
   width: 0.8rem;
   margin-right: 0.4rem;
@@ -396,6 +397,9 @@
 
 .home-suggestions .home-suggestions__options .suggestion-option.active {
   background-color: var(--third-color);
+}
+.home-suggestions .home-suggestions__options .suggestion-option.active img {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(72%) saturate(1452%) hue-rotate(360deg) brightness(104%) contrast(102%);
 }
 
 .home-suggestions .home-suggestions__options .suggestion-option img {
