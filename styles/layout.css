@@ -25,6 +25,13 @@ body.groups-layout {
   }
 }
 
+
+@media screen and (min-width: 800px) { 
+  body.groups-layout .home-sidebar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 920px) {
   body.groups-layout {
     grid-template-columns: auto;

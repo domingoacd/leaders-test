@@ -99,6 +99,9 @@
   cursor: pointer;
   color: #fff;
   font-weight: bold;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
   border: none;
   background-color: transparent;
 }

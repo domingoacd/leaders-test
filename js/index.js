@@ -26,8 +26,8 @@ const attachSideProfileEvents = () => {
   const showSideBarBtn = document.querySelector('.j-open-side-profile');
   const hideSideBarBtn = document.querySelector('.j-close-side-profile');
 
-  showSideBarBtn?.addEventListener('click', showSideBar);
-  hideSideBarBtn?.addEventListener('click', hideSideBar);
+  showSideBarBtn.addEventListener('click', showSideBar);
+  hideSideBarBtn.addEventListener('click', hideSideBar);
 };
 
 const showSideMenu = (e) => {
@@ -54,8 +54,8 @@ const attachSideMenuEvents = () => {
   const showSideMenuBtn = document.querySelector('.j-open-sidemenu');
   const hideSideMenuBtn = document.querySelector('.j-close-sidemenu');
 
-  showSideMenuBtn?.addEventListener('click', showSideMenu);
-  hideSideMenuBtn?.addEventListener('click', hideSideMenu);
+  showSideMenuBtn.addEventListener('click', showSideMenu);
+  hideSideMenuBtn.addEventListener('click', hideSideMenu);
 };
 
 const startTestFunctionalities = () => {

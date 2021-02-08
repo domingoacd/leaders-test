@@ -4,7 +4,9 @@ const activateCreateGroupBtn = () => {
   const createGroupBtn = document.getElementById('create-group');
   const groupCardTemplate = document.getElementById('group-card-template');
   const loader = document.getElementById('loader');
-  const APIURL = 'http://localhost/test-leaders/add.php';
+  const groupNameInput = document.getElementById('create-group-name');
+  const groupDescriptionInput = document.getElementById('create-group-description');
+  const APIURL = '';
 
   function openCreateGroupModal(e) {
     const modal = document.querySelector('.j-modal');
@@ -13,8 +15,9 @@ const activateCreateGroupBtn = () => {
   }
   function closeModal(e) {
     const modal = document.querySelector('.j-modal');
-
+    
     modal.classList.remove('show');
+    createGroupBtn.disabled = true;
   }
 
   function hideLoader() {
@@ -41,7 +44,6 @@ const activateCreateGroupBtn = () => {
       );
       paginationContainer.appendChild(newPaginationElement);
 
-      console.log(document.querySelectorAll('.j-group-p-btn'));
     }
   }
 
@@ -122,15 +124,26 @@ const activateCreateGroupBtn = () => {
   function saveInAPI(data) {
     fetch(APIURL, {
       method: 'POST',
-      body: JSON.stringify(data)
+      body: JSON.stringify(data),
     })
-      .then((res) => res.json()).then(result => {
-        createNewGroupCard(data);
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+
         hideLoader();
-      })  
+        if (result.status === 'ok') {
+          createNewGroupCard(data);
+        } else {
+          //showErrorMessage();
+        }
+      })
       .catch((err) => console.error('Error fetching groups from API', err));
   }
 
+  function cleanModalInputs() {
+    document.getElementById('create-group-name').value = '';
+    document.getElementById('create-group-description').value = '';
+  }
   function createGroup(e) {
     e.preventDefault();
     const data = {
@@ -153,12 +166,27 @@ const activateCreateGroupBtn = () => {
       saveInLocalStorage(data);
     }
 
+    cleanModalInputs();
     closeModal();
+  }
+
+  function handleSubmitButtonActivation(e) {
+    if (
+      groupDescriptionInput.value.length > 0 &&
+      groupNameInput.value.length > 0
+    ) {
+      createGroupBtn.disabled = false;
+    } else {
+      createGroupBtn.disabled = true;
+    }
+      
   }
 
   openCreateButton.addEventListener('click', openCreateGroupModal);
   closeModalButton.addEventListener('click', closeModal);
   createGroupBtn.addEventListener('click', createGroup);
+  groupNameInput.addEventListener('input', handleSubmitButtonActivation);
+  groupDescriptionInput.addEventListener('input', handleSubmitButtonActivation);
 };
 
 export default activateCreateGroupBtn;
