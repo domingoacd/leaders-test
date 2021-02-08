@@ -239,16 +239,26 @@
   background-color: var(--second-color);
 }
 
+.home-content .home-publish-options .home-publish-options__option.active .option-icon {
+  display: none;
+}
+.home-content .home-publish-options .home-publish-options__option.active .option-icon.option-icon--active {
+  display: block;
+}
+
 .home-content .home-publish-options .home-publish-options__option .option-icon {
   width: 0.8rem;
   margin-right: 0.4rem;
+}
+.home-content .home-publish-options .home-publish-options__option .option-icon.option-icon--active {
+  display: none;
 }
 
 .home-content
   .home-publish-options
   .home-publish-options__option
   .option-icon.option-icon--big {
-  width: 1.2rem;
+  width: 1rem;
 }
 
 .home-content .home-publish-post {
